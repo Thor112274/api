@@ -14,7 +14,7 @@ export default async function handler(req, res) {
       await cachedClient.connect();
     }
 
-    const db = cachedClient.db();
+    const db = cachedClient.db();)
     const col = db.collection("shortener_tokens");
 
     const data = await col.findOne({ token });
